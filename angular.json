@@ -9,6 +9,7 @@
         "@schematics/angular:component": {
           "style": "sass"
         }
+        
       },
       "root": "",
       "sourceRoot": "src",
@@ -99,6 +100,16 @@
               "src/styles.sass"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "firebase-todolist:build:production",
+            "firebaseProject": "firebase-todolist-jra",
+            "firebaseHostingSite": "jra-todolist"
           }
         }
       }

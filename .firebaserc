@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firebase-todolist-jra": {
+      "hosting": {
+        "firebase-todolist": [
+          "jra-todolist"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firebase-todolist-jra"
+  }
+}
